@@ -1,4 +1,8 @@
-# Django settings for experimentdb project.
+"""Django settings for experimentdb project.
+
+These settings are standard for all MouseDB projects.
+Database specific settings are set in localsettings.py.
+"""
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -68,7 +72,7 @@ TEMPLATE_DIRS = (
 	os.path.join(PROJECT_DIR, "templates"),
 )
 
-TEMPLATE_CONTEXT_PROCESSORS =(
+TEMPLATE_CONTEXT_PROCESSORS = (
 	"django.core.context_processors.auth",
 	"django.core.context_processors.debug",
 	"django.core.context_processors.i18n",
@@ -92,5 +96,3 @@ try:
     from localsettings import *
 except ImportError:
     print 'localsetting could not be imported'
-    pass #Or raise
-

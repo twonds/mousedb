@@ -1,6 +1,7 @@
 """Generic base url directives.
 
-These directives will redirect requests to app specific pages, and provide redundancy in possible names."""
+These directives will redirect requests to app specific pages
+It will also provide redundancy in possible names."""
 
 from django.conf.urls.defaults import *
 from django.contrib import admin
@@ -19,7 +20,7 @@ urlpatterns = patterns('',
 	(r'^dates?/', include('mousedb.animal.urls.date')),
 	(r'^breedings?/', include('mousedb.animal.urls.breeding')),
 	(r'^breeding_cages?/', include('mousedb.animal.urls.breeding')),
-	(r'^todo/', include('mousedb.animal.urls.todo')),
+	url(r'^todo/', include('mousedb.animal.urls.todo'), name="todo-list"),
 
 	(r'^experiments?/', include('mousedb.data.urls.experiment')),
 	(r'^study/', include('mousedb.data.urls.study')),
@@ -33,7 +34,7 @@ urlpatterns = patterns('',
 	(r'^timedmatings?/', include('mousedb.timed_mating.urls')),
 	(r'^timed_matings?/', include('mousedb.timed_mating.urls')),
 	
-	(r'^specs?/$', 'django.views.generic.simple.direct_to_template', {'template': 'specs.html'}),
-	(r'^index/$', 'mousedb.views.home'),
+	url(r'^specs?/$', 'django.views.generic.simple.direct_to_template', {'template': 'specs.html'}, name="specs"),
+	url(r'^index/$', 'mousedb.views.home', name="home"),
 )
 

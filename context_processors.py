@@ -1,3 +1,7 @@
+"""These modules define extra context processors.
+
+These contexts are provided to every view in which a context is passed."""
+
 from mousedb.groups.models import Group
 
 def group_info(request):
