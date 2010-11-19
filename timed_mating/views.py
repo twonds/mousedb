@@ -1,14 +1,41 @@
-"""This package defines custom views for the timed_mating application.
+"""This package defines views for the timed_mating application.
 
 Currently all views are generic CRUD views except for the view in which a plug event is defined from a breeding cage."""
 
 from django.shortcuts import render_to_response
-from django.contrib.auth.decorators import permission_required
+from django.contrib.auth.decorators import login_required, permission_required
 from django.template import RequestContext
 from django.http import HttpResponseRedirect
+from django.views.generic.list import ListView
+from django.views.generic.edit import CreateView
 
 from mousedb.animal.models import Breeding, Animal
 from mousedb.timed_mating.forms import BreedingPlugForm
+
+@login_required
+class PlugListView(ListView):
+    """This generic view generates a list of all plug events.
+	
+    This view returns a plug_list object of all pluy events and renders it using plug_list.html.
+    This view is restricted to logged in users."""
+    
+    queryset = PlugEvents.objects.all()
+    template_name = plug_list.html'
+    context_object_name = plug_list
+	
+@permission_required('timed_mating.add_plugevents')
+class PlugEventCreate(CreateView):
+    """This generic view generates a new plug event form.
+	
+    It renders plug_form and after saving redirects to /mousedb/plug_events.
+    This view is restricted to those with the add_plugevents permission."""
+	
+    model = PlugEvents
+    template_name = plug_form.html'
+    login_required = True
+    post_save_redirect = "/mousedb/plug_events/"
+	
+
 
 @permission_required('timed_mating.add_plugevents')
 def breeding_plugevent(request, breeding_id):
