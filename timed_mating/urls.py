@@ -5,14 +5,11 @@ It comprises of create, update, delete, detail and list of plug events."""
 from django.conf.urls.defaults import *
 from django.views.generic.list_detail import object_list, object_detail
 from django.views.generic.create_update import create_object, update_object, delete_object
-from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth.decorators import permission_required
 
 from mousedb.timed_mating.models import PlugEvents
-from mousedb.timed_mating.views import PlugListView, PlugEventCreate
-
-@login_required
-def limited_object_list(*args, **kwargs):
-	return object_list(*args, **kwargs)
+from mousedb.timed_mating.views import PlugListView, PlugDetailView, PlugEventCreate
+from mousedb.timed_mating.views import breeding_plugevent
 
 @permission_required('timed_mating.change_plugevents')
 def change_plugevents(*args, **kwargs):
@@ -23,12 +20,8 @@ def delete_plugevents(*args, **kwargs):
 	return delete_object(*args, **kwargs)
 
 urlpatterns = patterns('',
-	url(r'^$', PlugListView.as_view(), name="plugevents-list"),
-	url(r'^(?P<object_id>\d*)/$', limited_object_detail, {
-		'queryset': PlugEvents.objects.all(),
-		'template_name': 'plug_detail.html',
-		'template_object_name': 'plug',
-		}, name="plugevents-detail"),
+    url(r'^$', PlugListView.as_view(), name="plugevents-list"),
+    url(r'^(?P<pk>\d*)/$', PlugDetailView.as_view(), name="plugevents-detail"),
 	url(r'^new/$', PlugEventCreate.as_view(), name="plugevents-new"),	
 	url(r'^(?P<object_id>\d*)/edit/$', change_plugevents, {
 		'model': PlugEvents, 
@@ -42,5 +35,5 @@ urlpatterns = patterns('',
 		'post_delete_redirect':'/mousedb/plug_events/',
 		'template_name':'confirm_delete.html'
 		}, name="plugevents-delete"),
-	url(r'^breeding/(?P<breeding_id>\d*)/new', 'mousedb.timed_mating.views.breeding_plugevent', name="breeding-plugevents-new"),
+	url(r'^breeding/(?P<breeding_id>\d*)/new', breeding_plugevent, name="breeding-plugevents-new"),
 )

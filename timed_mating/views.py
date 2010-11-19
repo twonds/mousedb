@@ -7,10 +7,12 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.template import RequestContext
 from django.http import HttpResponseRedirect
 from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView
 
 from mousedb.animal.models import Breeding, Animal
 from mousedb.timed_mating.forms import BreedingPlugForm
+from mousedb.timed_mating.models import PlugEvents
 
 @login_required
 class PlugListView(ListView):
@@ -22,6 +24,17 @@ class PlugListView(ListView):
     queryset = PlugEvents.objects.all()
     template_name = plug_list.html'
     context_object_name = plug_list
+
+@login_required	
+class PlugDetailView(DetailView):
+    """This generic view provides details about a particular plug event.
+	
+    This view searches all plugevents for a particular primary key (defined in the url) and returns a plug object to plug_detail.html.
+    This view is restricted to logged in users."""
+
+    queryset = PlugEvents.objects.all()
+    template_name = plug_detail.html
+    context_object_name = plug
 	
 @permission_required('timed_mating.add_plugevents')
 class PlugEventCreate(CreateView):
