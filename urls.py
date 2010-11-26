@@ -3,8 +3,10 @@
 These directives will redirect requests to app specific pages, and provide redundancy in possible names."""
 
 from django.conf.urls.defaults import *
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns # for development serving of static files
 from django.contrib import admin
 admin.autodiscover()
+
 
 urlpatterns = patterns('',
 	#(r'^', 'django.views.generic.simple.direct_to_template', {'template': 'maintenance.html'}),
@@ -40,3 +42,4 @@ urlpatterns = patterns('',
 	url(r'^/?$', 'mousedb.views.home')
 )
 
+urlpatterns += staticfiles_urlpatterns() # for development serving of static files
