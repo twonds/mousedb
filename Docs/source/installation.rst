@@ -36,10 +36,10 @@ Web Server Setup
 ----------------
 You need to set up a server to serve both the django installation and saved files.  For the saved files.  I recommend using apache for both.  The preferred setup is to use Apache2 with mod_wsgi.  See http://code.google.com/p/modwsgi/wiki/InstallationInstructions for instructions on using mod_wsgi.  The following is a httpd.conf example where the code is placed in /usr/src/mousedb::
 
-Alias /robots.txt "usr\src\mousedb\media\robots.txt"
-Alias /favicon.ico "usr\src\media\favicon.ico"
+Alias /robots.txt "usr\src\mousedb\static\robots.txt"
+Alias /favicon.ico "usr\src\mousedb\static\favicon.ico"
 
-Alias /mousedb-media "usr\src\mousedb\media"
+Alias /static "usr\src\mousedb\static"
 
 <Directory "usr\src\mousedb">
    Order allow,deny
