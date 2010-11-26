@@ -17,11 +17,12 @@ USE_I18N = True
 # Absolute path to the directory that holds media.
 # Example: "/home/media/media.lawrence.com/"
 MEDIA_ROOT = os.path.join(PROJECT_DIR, "media")
-
+STATIC_ROOT = os.path.join(PROJECT_DIR, "static")
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
 MEDIA_URL = '/mousedb-media/'
+STATIC_URL = '/static/'
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
@@ -46,6 +47,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware'
+	'django.contrib.staticfiles'
 )
 
 ROOT_URLCONF = 'mousedb.urls'
@@ -59,6 +61,7 @@ TEMPLATE_CONTEXT_PROCESSORS =(
 	"django.core.context_processors.debug",
 	"django.core.context_processors.i18n",
 	"django.core.context_processors.media",
+	'django.core.context_processors.static',
 	'django.contrib.messages.context_processors.messages',
 	"mousedb.context_processors.group_info",
 )
