@@ -12,7 +12,7 @@
 
 
 \title{MouseDB Documentation}
-\date{June 20, 2010}
+\date{December 11, 2010}
 \release{0.1}
 \author{Dave Bridges, Ph.D.}
 \newcommand{\sphinxlogo}{}
@@ -485,23 +485,17 @@ A measurement is an animal, an assay and a measurement value.  It can be associa
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Assay}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Assay}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Assay(id, assay, assay\_slug, notes, measurement\_units)
 \index{Assay.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Assay.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Assay.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Assay.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Assay.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{measurement\_set (data.models.Assay attribute)}
@@ -517,23 +511,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Diet}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Diet}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Diet(id, vendor\_id, description, product\_id, fat\_content, protein\_content, carb\_content, irradiated, notes)
 \index{Diet.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Diet.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Diet.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Diet.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Diet.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{treatment\_set (data.models.Diet attribute)}
@@ -555,23 +543,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Environment}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Environment}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Environment(id, building, room, temperature, humidity, notes)
 \index{Environment.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Environment.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Environment.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Environment.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Environment.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{contact (data.models.Environment attribute)}
@@ -593,23 +575,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Experiment}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Experiment}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Experiment(id, date, notes, experimentID, feeding\_state, fasting\_time, injection, concentration, study\_id)
 \index{Experiment.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Experiment.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Experiment.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Experiment.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Experiment.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{animals (data.models.Experiment attribute)}
@@ -673,23 +649,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Implantation}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Implantation}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Implantation(id, implant, vendor\_id, product\_id, notes)
 \index{Implantation.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Implantation.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Implantation.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Implantation.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Implantation.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{surgeon (data.models.Implantation attribute)}
@@ -717,23 +687,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Measurement}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Measurement}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Measurement(id, animal\_id, experiment\_id, assay\_id, values)
 \index{Measurement.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Measurement.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Measurement.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Measurement.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Measurement.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{animal (data.models.Measurement attribute)}
@@ -761,23 +725,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Pharmaceutical}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Pharmaceutical}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Pharmaceutical(id, drug, dose, recurrance, mode, vendor\_id, notes)
 \index{Pharmaceutical.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Pharmaceutical.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Pharmaceutical.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Pharmaceutical.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Pharmaceutical.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{get\_mode\_display() (data.models.Pharmaceutical method)}
@@ -805,23 +763,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Researcher}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Researcher}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Researcher(id, first\_name, last\_name, name\_slug, email, active)
 \index{Researcher.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Researcher.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Researcher.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Researcher.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Researcher.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{environment\_set (data.models.Researcher attribute)}
@@ -861,23 +813,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Study}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Study}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Study(id, description, start\_date, stop\_date, notes)
 \index{Study.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Study.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Study.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Study.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Study.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{experiment\_set (data.models.Study attribute)}
@@ -911,23 +857,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Transplantation}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Transplantation}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Transplantation(id, tissue, transplant\_date, notes)
 \index{Transplantation.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Transplantation.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Transplantation.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Transplantation.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Transplantation.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{donor (data.models.Transplantation attribute)}
@@ -967,23 +907,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Treatment}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Treatment}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Treatment(id, treatment, study\_id, diet\_id, environment\_id, transplantation\_id, notes)
 \index{Treatment.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Treatment.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Treatment.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Treatment.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Treatment.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{animals (data.models.Treatment attribute)}
@@ -1047,23 +981,17 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Vendor}\pysiglinewithargsret{\strong{class }\code{data.models.}\bfcode{Vendor}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 Vendor(id, vendor, website, email, ordering, notes)
 \index{Vendor.DoesNotExist}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Vendor.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
-Bases: \code{django.core.exceptions.ObjectDoesNotExist}
-
 \end{fulllineitems}
 
 \index{Vendor.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.models.Vendor.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Vendor.}\bfcode{MultipleObjectsReturned}}{}
-Bases: \code{django.core.exceptions.MultipleObjectsReturned}
-
 \end{fulllineitems}
 
 \index{diet\_set (data.models.Vendor attribute)}
@@ -1100,8 +1028,6 @@ Bases: \code{django.core.exceptions.MultipleObjectsReturned}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.forms.ExperimentForm}\pysiglinewithargsret{\strong{class }\code{data.forms.}\bfcode{ExperimentForm}}{\emph{data=None}, \emph{files=None}, \emph{auto\_id='id\_\%s'}, \emph{prefix=None}, \emph{initial=None}, \emph{error\_class=\textless{}class `django.forms.util.ErrorList'\textgreater{}}, \emph{label\_suffix=':'}, \emph{empty\_permitted=False}, \emph{instance=None}}{}
-Bases: \code{django.forms.models.ModelForm}
-
 This is the configuration for the experiment form.
 
 This form is used to set up and modify an experiment.  It uses a datepicker widget for the date, and autocomplete forms for the animals.
@@ -1138,8 +1064,6 @@ alias of \code{Experiment}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.forms.MeasurementForm}\pysiglinewithargsret{\strong{class }\code{data.forms.}\bfcode{MeasurementForm}}{\emph{data=None}, \emph{files=None}, \emph{auto\_id='id\_\%s'}, \emph{prefix=None}, \emph{initial=None}, \emph{error\_class=\textless{}class `django.forms.util.ErrorList'\textgreater{}}, \emph{label\_suffix=':'}, \emph{empty\_permitted=False}, \emph{instance=None}}{}
-Bases: \code{django.forms.models.ModelForm}
-
 Form definition for adding and editing measurements.
 
 This form excludes experiment, which must be passed as a filtering parameter from the view.  
@@ -1170,9 +1094,7 @@ alias of \code{Measurement}
 \index{StudyExperimentForm (class in data.forms)}
 
 \begin{fulllineitems}
-\phantomsection\label{api:data.forms.StudyExperimentForm}\pysiglinewithargsret{\strong{class }\code{data.forms.}\bfcode{StudyExperimentForm}}{\emph{data=None}, \emph{files=None}, \emph{auto\_id='id\_\%s'}, \emph{prefix=None}, \emph{initial=None}, \emph{error\_class=\textless{}class `django.forms.util.ErrorList'\textgreater{}}, \emph{label\_suffix=':'}, \emph{empty\_permitted=False}, \emph{instance=None}}{}
-Bases: \code{django.forms.models.ModelForm}
-\index{StudyExperimentForm.Meta (class in data.forms)}
+\phantomsection\label{api:data.forms.StudyExperimentForm}\pysiglinewithargsret{\strong{class }\code{data.forms.}\bfcode{StudyExperimentForm}}{\emph{data=None}, \emph{files=None}, \emph{auto\_id='id\_\%s'}, \emph{prefix=None}, \emph{initial=None}, \emph{error\_class=\textless{}class `django.forms.util.ErrorList'\textgreater{}}, \emph{label\_suffix=':'}, \emph{empty\_permitted=False}, \emph{instance=None}}{}~\index{StudyExperimentForm.Meta (class in data.forms)}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.forms.StudyExperimentForm.Meta}\pysigline{\strong{class }\bfcode{Meta}}{}~\index{model (data.forms.StudyExperimentForm.Meta attribute)}
@@ -1199,8 +1121,6 @@ alias of \code{Experiment}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.forms.StudyForm}\pysiglinewithargsret{\strong{class }\code{data.forms.}\bfcode{StudyForm}}{\emph{data=None}, \emph{files=None}, \emph{auto\_id='id\_\%s'}, \emph{prefix=None}, \emph{initial=None}, \emph{error\_class=\textless{}class `django.forms.util.ErrorList'\textgreater{}}, \emph{label\_suffix=':'}, \emph{empty\_permitted=False}, \emph{instance=None}}{}
-Bases: \code{django.forms.models.ModelForm}
-
 This is the configuration for the study form.
 
 This form is used to create and modify studies.  It uses an autocomplete widget for the animals.
@@ -1237,8 +1157,6 @@ alias of \code{Study}
 
 \begin{fulllineitems}
 \phantomsection\label{api:data.forms.TreatmentForm}\pysiglinewithargsret{\strong{class }\code{data.forms.}\bfcode{TreatmentForm}}{\emph{data=None}, \emph{files=None}, \emph{auto\_id='id\_\%s'}, \emph{prefix=None}, \emph{initial=None}, \emph{error\_class=\textless{}class `django.forms.util.ErrorList'\textgreater{}}, \emph{label\_suffix=':'}, \emph{empty\_permitted=False}, \emph{instance=None}}{}
-Bases: \code{django.forms.models.ModelForm}
-
 Form class for study treatment groups.
 
 In the case of studies, animals are defined in the treatment group rather than in the study group.  A treatment consists of a study, a set of animals and the conditions which define that treatment.  This includes related fields for environment, diet, implants and transplants.
@@ -1301,7 +1219,191 @@ alias of \code{Treatment}
 \phantomsection\label{api:module-data.urls}\index{data.urls (module)}
 
 \subsection{Administrative Site Configuration}
-\label{api:administrative-site-configuration}\label{api:module-data.admin}\index{data.admin (module)}
+\label{api:administrative-site-configuration}\label{api:module-data.admin}\index{data.admin (module)}\index{AssayAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.AssayAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{AssayAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.AssayAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.AssayAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{DietAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.DietAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{DietAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.DietAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.DietAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{EnvironmentAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.EnvironmentAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{EnvironmentAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.EnvironmentAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.EnvironmentAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{ExperimentAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.ExperimentAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{ExperimentAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.ExperimentAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.ExperimentAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{ImplantationAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.ImplantationAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{ImplantationAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.ImplantationAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.ImplantationAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{MeasurementAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.MeasurementAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{MeasurementAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.MeasurementAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.MeasurementAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{MeasurementInline (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.MeasurementInline}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{MeasurementInline}}{\emph{parent\_model}, \emph{admin\_site}}{}~\index{media (data.admin.MeasurementInline attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.MeasurementInline.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+\index{model (data.admin.MeasurementInline attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.MeasurementInline.model}\pysigline{\bfcode{model}}{}
+alias of \code{Measurement}
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{PharmaceuticalAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.PharmaceuticalAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{PharmaceuticalAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.PharmaceuticalAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.PharmaceuticalAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{ResearcherAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.ResearcherAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{ResearcherAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.ResearcherAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.ResearcherAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{StudyAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.StudyAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{StudyAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.StudyAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.StudyAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{TransplantationAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.TransplantationAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{TransplantationAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.TransplantationAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.TransplantationAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{TreatmentAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.TreatmentAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{TreatmentAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.TreatmentAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.TreatmentAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{TreatmentInline (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.TreatmentInline}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{TreatmentInline}}{\emph{parent\_model}, \emph{admin\_site}}{}~\index{media (data.admin.TreatmentInline attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.TreatmentInline.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+\index{model (data.admin.TreatmentInline attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.TreatmentInline.model}\pysigline{\bfcode{model}}{}
+alias of \code{Treatment}
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{VendorAdmin (class in data.admin)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.VendorAdmin}\pysiglinewithargsret{\strong{class }\code{data.admin.}\bfcode{VendorAdmin}}{\emph{model}, \emph{admin\_site}}{}~\index{media (data.admin.VendorAdmin attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:data.admin.VendorAdmin.media}\pysigline{\bfcode{media}}{}
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+
 
 \section{Animals Package}
 \label{api:animals-package}\label{api:module-animal}\index{animal (module)}
@@ -1336,51 +1438,25 @@ The result of this is that a query for a particular strain may then need to be f
 This module describes the Strain, Animal, Breeding and Cage data models.
 
 This module stores all data regarding a particular laboratory animal.  Information about experimental data and timed matings are stored in the data and timed\_matings packages.  This module describes the database structure for each data model.
-\index{Strain (class in animal.models)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.models.Strain}\pysiglinewithargsret{\strong{class }\code{animal.models.}\bfcode{Strain}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
-A data model describing a mouse strain.
-
-This is separate from the background of a mouse.  For example a ob/ob mouse on a mixed or a black-6 background still have the same strain.  The background is defined in the animal and breeding cages.  Strain and Strain\_slug are required.
-
-\end{fulllineitems}
-
-\index{Animal (class in animal.models)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.models.Animal}\pysiglinewithargsret{\strong{class }\code{animal.models.}\bfcode{Animal}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
-A data model describing an animal.
-
-This data model describes a wide variety of parameters of an experimental animal.  This model is linked to the Strain and Cage models via 1:1 relationships.  If the parentage of a mouse is known, this can be identified (the breeding set may not be clear on this matter). Mice are automatically marked as not alive when a Death date is provided and the object is saved.  Strain, Background and Genotype are required field.  By default, querysets are ordered first by strain then by MouseID.
-
-\end{fulllineitems}
-
-\index{Breeding (class in animal.models)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.models.Breeding}\pysiglinewithargsret{\strong{class }\code{animal.models.}\bfcode{Breeding}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
-This data model stores information about a particular breeding set
-
-A breeding set may contain one ore more males and females and must be defined via the progeny strain.  For example, in the case of generating a new strain, the strain indicates the new strain not the parental strains.  A breeding cage is defined as one male with one or more females.  If the breeding set is part of a timed mating experiment, then Timed\_Mating must be selected.  Breeding cages are automatically inactivated upon saving when a End date is provided.  The only required field is Strain.  By default, querysets are ordered by Strain, then Start.
-
-\end{fulllineitems}
-
 \index{Cage (class in animal.models)}
 
 \begin{fulllineitems}
 \phantomsection\label{api:animal.models.Cage}\pysiglinewithargsret{\strong{class }\code{animal.models.}\bfcode{Cage}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 This data model stores information about a particular cage.
 
 This model, which is not yet implemented will be used by both breeding and non-breeding cages and will facilitate easier tracking and storage of cages.  To implement this, it will be necessary to automatically generate a new cage (if a novel barcode is entered), or to use a current cage if the barcode is already present in the database
+\index{Cage.DoesNotExist}
+
+\begin{fulllineitems}
+\phantomsection\label{api:animal.models.Cage.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
+\end{fulllineitems}
+
+\index{Cage.MultipleObjectsReturned}
+
+\begin{fulllineitems}
+\phantomsection\label{api:animal.models.Cage.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Cage.}\bfcode{MultipleObjectsReturned}}{}
+\end{fulllineitems}
+
 
 \end{fulllineitems}
 
@@ -1393,8 +1469,6 @@ Forms for use in manipulating objects in the animal app.
 
 \begin{fulllineitems}
 \phantomsection\label{api:animal.forms.AnimalForm}\pysiglinewithargsret{\strong{class }\code{animal.forms.}\bfcode{AnimalForm}}{\emph{data=None}, \emph{files=None}, \emph{auto\_id='id\_\%s'}, \emph{prefix=None}, \emph{initial=None}, \emph{error\_class=\textless{}class `django.forms.util.ErrorList'\textgreater{}}, \emph{label\_suffix=':'}, \emph{empty\_permitted=False}, \emph{instance=None}}{}
-Bases: \code{django.forms.models.ModelForm}
-
 This modelform provides fields for modifying animal data.
 
 It includes all fields except CageID (will be deprecated) and Alive (which is automattically set upon saving the animal).
@@ -1432,8 +1506,6 @@ alias of \code{Animal}
 
 \begin{fulllineitems}
 \phantomsection\label{api:animal.forms.BreedingForm}\pysiglinewithargsret{\strong{class }\code{animal.forms.}\bfcode{BreedingForm}}{\emph{data=None}, \emph{files=None}, \emph{auto\_id='id\_\%s'}, \emph{prefix=None}, \emph{initial=None}, \emph{error\_class=\textless{}class `django.forms.util.ErrorList'\textgreater{}}, \emph{label\_suffix=':'}, \emph{empty\_permitted=False}, \emph{instance=None}}{}
-Bases: \code{django.forms.models.ModelForm}
-
 This form provides most fields for creating and entring breeding cage data.
 
 This form is used from the url /mousedb/breeding/new and is a generic create view.  The only excluded field is CageID, as this feature will be deprecated.  This view includes a datepicker widget for Stat and End dates and autocomplete fields for the Females and Male fields
@@ -1469,221 +1541,10 @@ alias of \code{Breeding}
 
 
 \subsection{Views and URLs}
-\label{api:id3}\phantomsection\label{api:module-animal.views}\index{animal.views (module)}
-These views define template redirects for the animal app.
-
-This module contains only non-generic views.  Several generic views are also used and are defined in animal/urls/.
-\index{animal\_detail() (in module animal.views)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.views.animal_detail}\pysiglinewithargsret{\code{animal.views.}\bfcode{animal\_detail}}{\emph{request}, \emph{*args}, \emph{**kwargs}}{}
-This view displays specific details about an animal.
-
-It takes a request in the form animal/(id)/, mice/(id) or mouse/(id)/ and renders the detail page for that mouse.  The request is defined for id not MouseID (or barcode) because this allows for details to be displayed for mice without barcode identification.
-Therefore care must be taken that animal/4932 is id=4932 and not barcode=4932.  The animal name is defined at the top of the page.
-This page is restricted to logged-in users.
-
-\end{fulllineitems}
-
-\index{breeding() (in module animal.views)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.views.breeding}\pysiglinewithargsret{\code{animal.views.}\bfcode{breeding}}{\emph{request}, \emph{*args}, \emph{**kwargs}}{}
-This view displays a list of breeding sets.
-
-It takes a request in the form /breeding/ and lists all currently active breeding sets.
-This page is restricted to logged-in users.
-
-\end{fulllineitems}
-
-\index{breeding\_all() (in module animal.views)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.views.breeding_all}\pysiglinewithargsret{\code{animal.views.}\bfcode{breeding\_all}}{\emph{request}, \emph{*args}, \emph{**kwargs}}{}
-This view displays a list of breeding sets.
-
-It takes a request in the form /breeding/all and lists all breeding sets (both active and inactive).
-This page is restricted to logged-in users.
-
-\end{fulllineitems}
-
-\index{breeding\_change() (in module animal.views)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.views.breeding_change}\pysiglinewithargsret{\code{animal.views.}\bfcode{breeding\_change}}{\emph{request}, \emph{*args}, \emph{**kwargs}}{}
-This view is used to generate a form by which to change pups which belong to a particular breeding set.
-
-This view typically is used to modify existing pups.  This might include marking animals as sacrificed, entering genotype or marking information or entering movement of mice to another cage.  It is used to show and modify several animals at once.
-It takes a request in the form /breeding/(breeding\_id)/change/ and returns a form specific to the breeding set defined in breeding\_id.  breeding\_id is the background identification number of the breeding set and does not refer to the barcode of any breeding cage.
-This view returns a formset in which one row represents one animal.  To add extra animals to a breeding set use /breeding/(breeding\_id)/pups/.
-This view is restricted to those with the permission animal.change\_animal.
-
-\end{fulllineitems}
-
-\index{breeding\_detail() (in module animal.views)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.views.breeding_detail}\pysiglinewithargsret{\code{animal.views.}\bfcode{breeding\_detail}}{\emph{request}, \emph{*args}, \emph{**kwargs}}{}
-This view displays specific details about a breeding set.
-
-It takes a request in the form /breeding/(breeding\_id)/all and renders the detail page for that breeding set.
-The breeding\_id refers to the background id of the breeding set, and not the breeding cage barcode.
-This view also passes along a dictionary of all pups belonging to that breeding set.
-This page is restricted to logged-in users.
-
-\end{fulllineitems}
-
-\index{breeding\_pups() (in module animal.views)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.views.breeding_pups}\pysiglinewithargsret{\code{animal.views.}\bfcode{breeding\_pups}}{\emph{request}, \emph{*args}, \emph{**kwargs}}{}
-This view is used to generate a form by which to add pups which belong to a particular breeding set.
-
-This view is intended to be used to add initial information about pups, including eartag, genotype, gender and birth or weaning information.
-It takes a request in the form /breeding/(breeding\_id)/pups/ and returns a form specific to the breeding set defined in breeding\_id.  breeding\_id is the background identification number of the breeding set and does not refer to the barcode of any breeding cage.
-This view is restricted to those with the permission animal.add\_animal.
-
-\end{fulllineitems}
-
-\index{strain\_detail() (in module animal.views)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.views.strain_detail}\pysiglinewithargsret{\code{animal.views.}\bfcode{strain\_detail}}{\emph{request}, \emph{*args}, \emph{**kwargs}}{}
-This view displays specific details about a strain.
-
-It takes a request in the form strain/(strain\_slug)/ and renders the detail page for that strain.
-This view also passes along a dictionary of alive animals belonging to that strain.
-This page is restricted to logged-in users.
-
-\end{fulllineitems}
-
-\index{strain\_detail\_all() (in module animal.views)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.views.strain_detail_all}\pysiglinewithargsret{\code{animal.views.}\bfcode{strain\_detail\_all}}{\emph{request}, \emph{*args}, \emph{**kwargs}}{}
-This view displays specific details about a strain.
-
-It takes a request in the form /strain/(strain\_slug)/all and renders the detail page for that strain.
-This view also passes along a dictionary of all animals belonging to that strain.
-This page is restricted to logged-in users.
-
-\end{fulllineitems}
-
-\index{strain\_list() (in module animal.views)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.views.strain_list}\pysiglinewithargsret{\code{animal.views.}\bfcode{strain\_list}}{\emph{request}, \emph{*args}, \emph{**kwargs}}{}
-This view presents a list of strains currently present in the database and annotates this list with a count of alive and total animals.
-
-This view redirects from a /strain/ request.
-This view is restricted to logged-in users.
-
-\end{fulllineitems}
-
-\phantomsection\label{api:module-animal.urls}\index{animal.urls (module)}
+\label{api:id3}\phantomsection\label{api:module-animal.urls}\index{animal.urls (module)}
 
 \subsection{Administrative Site Configuration}
-\label{api:id4}\phantomsection\label{api:module-animal.admin}\index{animal.admin (module)}
-Admin site settings for the animal app.
-\index{AnimalAdmin (class in animal.admin)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.AnimalAdmin}\pysiglinewithargsret{\strong{class }\code{animal.admin.}\bfcode{AnimalAdmin}}{\emph{model}, \emph{admin\_site}}{}
-Bases: \code{django.contrib.admin.options.ModelAdmin}
-
-Provides parameters for animal objects within the admin interface.
-\index{mark\_sacrificed() (animal.admin.AnimalAdmin method)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.AnimalAdmin.mark_sacrificed}\pysiglinewithargsret{\bfcode{mark\_sacrificed}}{\emph{request}, \emph{queryset}}{}
-An admin action for marking several animals as sacrificed.
-
-This action sets the selected animals as Alive=False, Death=today and Cause\_of\_Death as sacrificed.  To use other paramters, mice muse be individually marked as sacrificed.
-This admin action also shows as the output the number of mice sacrificed.
-
-\end{fulllineitems}
-
-\index{media (animal.admin.AnimalAdmin attribute)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.AnimalAdmin.media}\pysigline{\bfcode{media}}{}
-\end{fulllineitems}
-
-
-\end{fulllineitems}
-
-\index{AnimalInline (class in animal.admin)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.AnimalInline}\pysiglinewithargsret{\strong{class }\code{animal.admin.}\bfcode{AnimalInline}}{\emph{parent\_model}, \emph{admin\_site}}{}
-Bases: \code{django.contrib.admin.options.TabularInline}
-
-Provides an inline tabular formset for animal objects.
-
-Currently used with the breeding admin page.
-\index{media (animal.admin.AnimalInline attribute)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.AnimalInline.media}\pysigline{\bfcode{media}}{}
-\end{fulllineitems}
-
-\index{model (animal.admin.AnimalInline attribute)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.AnimalInline.model}\pysigline{\bfcode{model}}{}
-alias of \code{Animal}
-
-\end{fulllineitems}
-
-
-\end{fulllineitems}
-
-\index{BreedingAdmin (class in animal.admin)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.BreedingAdmin}\pysiglinewithargsret{\strong{class }\code{animal.admin.}\bfcode{BreedingAdmin}}{\emph{model}, \emph{admin\_site}}{}
-Bases: \code{django.contrib.admin.options.ModelAdmin}
-
-Settings in the admin interface for dealing with Breeding objects.
-
-This interface also includes an form for adding objects associated with this breeding cage.
-\index{mark\_deactivated() (animal.admin.BreedingAdmin method)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.BreedingAdmin.mark_deactivated}\pysiglinewithargsret{\bfcode{mark\_deactivated}}{\emph{request}, \emph{queryset}}{}
-An admin action for marking several cages as inactive.
-
-This action sets the selected cages as Active=False and Death=today.
-This admin action also shows as the output the number of mice sacrificed.
-
-\end{fulllineitems}
-
-\index{media (animal.admin.BreedingAdmin attribute)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.BreedingAdmin.media}\pysigline{\bfcode{media}}{}
-\end{fulllineitems}
-
-
-\end{fulllineitems}
-
-\index{StrainAdmin (class in animal.admin)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.StrainAdmin}\pysiglinewithargsret{\strong{class }\code{animal.admin.}\bfcode{StrainAdmin}}{\emph{model}, \emph{admin\_site}}{}
-Bases: \code{django.contrib.admin.options.ModelAdmin}
-
-Settings in the admin interface for dealing with Strain objects.
-\index{media (animal.admin.StrainAdmin attribute)}
-
-\begin{fulllineitems}
-\phantomsection\label{api:animal.admin.StrainAdmin.media}\pysigline{\bfcode{media}}{}
-\end{fulllineitems}
-
-
-\end{fulllineitems}
-
-
+\label{api:id4}
 
 \section{Timed Mating Package}
 \label{api:module-timed_mating}\label{api:timed-mating-package}\index{timed\_mating (module)}
@@ -1706,13 +1567,75 @@ Currently the only data model is for PlugEvents.
 
 \begin{fulllineitems}
 \phantomsection\label{api:timed_mating.models.PlugEvents}\pysiglinewithargsret{\strong{class }\code{timed\_mating.models.}\bfcode{PlugEvents}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 This defines the model for PlugEvents.
 
 A PlugEvent requires a date.  All other fields are optional.
 Upon observation of a plug event, the PlugDate, Breeding Cage, Femalem, Male, Researcher and Notes can be set.
 Upon sacrifice of the mother, then genotyped alive and dead embryos can be entered, along with the SacrificeDate, Researcher and Notes.
+\index{Breeding (timed\_mating.models.PlugEvents attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:timed_mating.models.PlugEvents.Breeding}\pysigline{\bfcode{Breeding}}{}
+\end{fulllineitems}
+
+\index{PlugEvents.DoesNotExist}
+
+\begin{fulllineitems}
+\phantomsection\label{api:timed_mating.models.PlugEvents.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
+\end{fulllineitems}
+
+\index{PlugEvents.MultipleObjectsReturned}
+
+\begin{fulllineitems}
+\phantomsection\label{api:timed_mating.models.PlugEvents.MultipleObjectsReturned}\pysigline{\strong{exception }\code{PlugEvents.}\bfcode{MultipleObjectsReturned}}{}
+\end{fulllineitems}
+
+\index{PlugFemale (timed\_mating.models.PlugEvents attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:timed_mating.models.PlugEvents.PlugFemale}\pysigline{\code{PlugEvents.}\bfcode{PlugFemale}}{}
+\end{fulllineitems}
+
+\index{PlugMale (timed\_mating.models.PlugEvents attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:timed_mating.models.PlugEvents.PlugMale}\pysigline{\code{PlugEvents.}\bfcode{PlugMale}}{}
+\end{fulllineitems}
+
+\index{Researcher (timed\_mating.models.PlugEvents attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:timed_mating.models.PlugEvents.Researcher}\pysigline{\code{PlugEvents.}\bfcode{Researcher}}{}
+\end{fulllineitems}
+
+\index{get\_absolute\_url() (timed\_mating.models.PlugEvents method)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:timed_mating.models.PlugEvents.get_absolute_url}\pysiglinewithargsret{\code{PlugEvents.}\bfcode{get\_absolute\_url}}{\emph{*moreargs}, \emph{**morekwargs}}{}
+\end{fulllineitems}
+
+\index{get\_next\_by\_PlugDate() (timed\_mating.models.PlugEvents method)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:timed_mating.models.PlugEvents.get_next_by_PlugDate}\pysiglinewithargsret{\code{PlugEvents.}\bfcode{get\_next\_by\_PlugDate}}{\emph{*moreargs}, \emph{**morekwargs}}{}
+\end{fulllineitems}
+
+\index{get\_previous\_by\_PlugDate() (timed\_mating.models.PlugEvents method)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:timed_mating.models.PlugEvents.get_previous_by_PlugDate}\pysiglinewithargsret{\code{PlugEvents.}\bfcode{get\_previous\_by\_PlugDate}}{\emph{*moreargs}, \emph{**morekwargs}}{}
+\end{fulllineitems}
+
+\index{save() (timed\_mating.models.PlugEvents method)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:timed_mating.models.PlugEvents.save}\pysiglinewithargsret{\code{PlugEvents.}\bfcode{save}}{}{}
+Over-rides the default save function for PlugEvents.
+
+If a sacrifice date is set for an object in this model, then Active is set to False.
+
+\end{fulllineitems}
+
 
 \end{fulllineitems}
 
@@ -1725,8 +1648,6 @@ This package describes forms used by the Timed Mating app.
 
 \begin{fulllineitems}
 \phantomsection\label{api:timed_mating.forms.BreedingPlugForm}\pysiglinewithargsret{\strong{class }\code{timed\_mating.forms.}\bfcode{BreedingPlugForm}}{\emph{data=None}, \emph{files=None}, \emph{auto\_id='id\_\%s'}, \emph{prefix=None}, \emph{initial=None}, \emph{error\_class=\textless{}class `django.forms.util.ErrorList'\textgreater{}}, \emph{label\_suffix=':'}, \emph{empty\_permitted=False}, \emph{instance=None}}{}
-Bases: \code{django.forms.models.ModelForm}
-
 This form is used to enter Plug Events from a specific breeding cage.
 \index{BreedingPlugForm.Meta (class in timed\_mating.forms)}
 
@@ -1809,8 +1730,6 @@ This file defines a PlugEventsAdmin object to enter parameters about individual 
 
 \begin{fulllineitems}
 \phantomsection\label{api:timed_mating.admin.PlugEventsAdmin}\pysiglinewithargsret{\strong{class }\code{timed\_mating.admin.}\bfcode{PlugEventsAdmin}}{\emph{model}, \emph{admin\_site}}{}
-Bases: \code{django.contrib.admin.options.ModelAdmin}
-
 This class defines the admin interface for the PlugEvents model.
 \index{media (timed\_mating.admin.PlugEventsAdmin attribute)}
 
@@ -1835,12 +1754,34 @@ Because every page on this site identifies both the Group and data restrictions,
 
 \begin{fulllineitems}
 \phantomsection\label{api:groups.models.Group}\pysiglinewithargsret{\strong{class }\code{groups.models.}\bfcode{Group}}{\emph{*args}, \emph{**kwargs}}{}
-Bases: \code{django.db.models.base.Model}
-
 This defines the data structure for the Group model.
 
 The only required field is group.
 All other fields (group\_slug, group\_url, license, contact\_title, contact\_first, contact\_last and contact\_email) are optional.
+\index{Group.DoesNotExist}
+
+\begin{fulllineitems}
+\phantomsection\label{api:groups.models.Group.DoesNotExist}\pysigline{\strong{exception }\bfcode{DoesNotExist}}{}
+\end{fulllineitems}
+
+\index{Group.MultipleObjectsReturned}
+
+\begin{fulllineitems}
+\phantomsection\label{api:groups.models.Group.MultipleObjectsReturned}\pysigline{\strong{exception }\code{Group.}\bfcode{MultipleObjectsReturned}}{}
+\end{fulllineitems}
+
+\index{get\_contact\_title\_display() (groups.models.Group method)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:groups.models.Group.get_contact_title_display}\pysiglinewithargsret{\code{Group.}\bfcode{get\_contact\_title\_display}}{\emph{*moreargs}, \emph{**morekwargs}}{}
+\end{fulllineitems}
+
+\index{license (groups.models.Group attribute)}
+
+\begin{fulllineitems}
+\phantomsection\label{api:groups.models.Group.license}\pysigline{\code{Group.}\bfcode{license}}{}
+\end{fulllineitems}
+
 
 \end{fulllineitems}
 
@@ -1854,8 +1795,6 @@ All other fields (group\_slug, group\_url, license, contact\_title, contact\_fir
 
 \begin{fulllineitems}
 \phantomsection\label{api:groups.admin.GroupAdmin}\pysiglinewithargsret{\strong{class }\code{groups.admin.}\bfcode{GroupAdmin}}{\emph{model}, \emph{admin\_site}}{}
-Bases: \code{django.contrib.admin.options.ModelAdmin}
-
 Defines the admin interface for Groups.
 
 Currently set as default.
@@ -1872,8 +1811,6 @@ Currently set as default.
 
 \begin{fulllineitems}
 \phantomsection\label{api:groups.admin.LicenseAdmin}\pysiglinewithargsret{\strong{class }\code{groups.admin.}\bfcode{LicenseAdmin}}{\emph{model}, \emph{admin\_site}}{}
-Bases: \code{django.contrib.admin.options.ModelAdmin}
-
 Defines the admin interface for Licences.
 
 Currently set as default.
@@ -1907,11 +1844,9 @@ Currently set as default.
 \def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
 \bigletter{a}
 \item {\texttt{animal}}, \pageref{api:module-animal}
-\item {\texttt{animal.admin}}, \pageref{api:module-animal.admin}
 \item {\texttt{animal.forms}}, \pageref{api:module-animal.forms}
 \item {\texttt{animal.models}}, \pageref{api:module-animal.models}
 \item {\texttt{animal.urls}}, \pageref{api:module-animal.urls}
-\item {\texttt{animal.views}}, \pageref{api:module-animal.views}
 \indexspace
 \bigletter{d}
 \item {\texttt{data}}, \pageref{api:module-data}
